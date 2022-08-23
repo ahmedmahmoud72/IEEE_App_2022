@@ -15,7 +15,8 @@ class HomeLayout extends StatelessWidget {
       listener: (context, state) {},
       builder: (context, state) {
         var cubit = AppCubit.get(context);
-        return Scaffold(
+        return 
+          Scaffold(
           appBar: AppBar(
             backgroundColor: myColor,
             centerTitle: true,
