@@ -3,7 +3,7 @@ import 'package:my_app/shared/constants/colors.dart';
 
 class CustomEvent extends StatelessWidget {
   double height, width;
-  String eventName, startDate, endDate, description, text;
+  String eventName, startDate, endDate, description, text, imageUrl;
   Color? color;
   Function function;
 
@@ -16,6 +16,7 @@ class CustomEvent extends StatelessWidget {
         required this.height,
         required this.width,
         required this.text,
+        required this.imageUrl,
         this.color,
         required this.function})
       : super(key: key);
@@ -26,7 +27,7 @@ class CustomEvent extends StatelessWidget {
       alignment: Alignment.bottomCenter,
       children: [
         Image.asset(
-          'assets/images/Event image.jpg',
+          imageUrl,
           height: height,
           width: width,
           fit: BoxFit.cover,

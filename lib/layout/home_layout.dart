@@ -16,35 +16,32 @@ class HomeLayout extends StatelessWidget {
       builder: (context, state) {
         var cubit = AppCubit.get(context);
         return 
-          Scaffold(
-          appBar: AppBar(
-            backgroundColor: myColor,
-            centerTitle: true,
-            title: const Text('IEEE KSB App'),
-          ),
-          body: cubit.bottomScreens[cubit.currentIndex],
-          bottomNavigationBar: CurvedNavigationBar(
-            animationDuration: const Duration(milliseconds: 500),
-            backgroundColor: myColor,
-            onTap: (index) {
-              cubit.changeBottom(index);
-            },
-            items: const [
-              Icon(
-                (Icons.home),
-              ),
-              Icon(
-                (Icons.event),
-              ),
-              Icon(
-                (Icons.article_outlined),
-              ),
-              Icon(
-                (Icons.group_rounded),
-              ),
-            ],
-          ),
-        );
+          SafeArea(
+            child: Scaffold(
+            body: cubit.bottomScreens[cubit.currentIndex],
+            bottomNavigationBar: CurvedNavigationBar(
+              animationDuration: const Duration(milliseconds: 500),
+              backgroundColor: myColor,
+              onTap: (index) {
+                cubit.changeBottom(index);
+              },
+              items: const [
+                Icon(
+                  (Icons.home),
+                ),
+                Icon(
+                  (Icons.event),
+                ),
+                Icon(
+                  (Icons.article_outlined),
+                ),
+                Icon(
+                  (Icons.group_rounded),
+                ),
+              ],
+            ),
+        ),
+          );
       },
     );
   }

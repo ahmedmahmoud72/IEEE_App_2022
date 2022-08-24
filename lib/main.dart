@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'layout/home_layout.dart';
 import 'layout/cubit/app_cubit.dart';
+import 'modules/events/events_screen.dart';
 void main() {
   runApp(const MyApp());
 }
