@@ -1,8 +1,6 @@
-
 import 'package:flutter/cupertino.dart';
-
-import '../../functions/get_device_type.dart';
 import '../../models/device_info_model.dart';
+import 'functions/get_device_type.dart';
 
 
 class InfoWidget extends StatelessWidget {

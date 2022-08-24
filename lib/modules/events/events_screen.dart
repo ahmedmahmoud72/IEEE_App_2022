@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
 import 'package:my_app/models/device_info_model.dart';
-import 'package:my_app/shared/components/device_info_widget.dart';
+import 'package:my_app/shared/responsive/device_info_widget.dart';
 import 'package:my_app/shared/components/event/event_component.dart';
 import 'package:my_app/shared/constants/colors.dart';
 

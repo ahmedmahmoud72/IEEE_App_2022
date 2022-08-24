@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
-
-import '../enums/device_type.dart';
+import 'package:my_app/shared/responsive/enums/device_type.dart';
 
 class DeviceInfo {
   final Orientation orientation;
