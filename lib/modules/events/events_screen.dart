@@ -63,14 +63,14 @@ class EventsScreen extends StatelessWidget {
                       .toList(),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.only(top: 20.0, left: 20.0),
+              const Padding(
+                padding: EdgeInsets.only(top: 20.0, left: 20.0),
                 child: Text(
                   'Events Details',
                   style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
-                      color: myColor),
+                      color: Colors.black54),
                 ),
               ),
               ListView.separated(
