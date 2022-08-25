@@ -1,11 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:my_app/shared/constants/colors.dart';
 
-class member extends StatelessWidget {
+class  member extends StatelessWidget {
   double width, height;
   String image, name;
 
   member(this.width, this.height, this.image, this.name);
+  Color myColor= MyColors.myColor;
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +19,7 @@ class member extends StatelessWidget {
         children: [
           SizedBox(width: width*0.7,height: width*0.7,
             child: CircleAvatar(
-              backgroundColor: Colors.grey,
+              backgroundColor:myColor,
               backgroundImage: NetworkImage(
                 image,
               ),
@@ -27,14 +29,15 @@ class member extends StatelessWidget {
           Text(
             name,
             style: TextStyle(
-              color: Colors.blue,
+              fontSize: 20.0,
+              color:myColor,
             ),
           )
         ],
       ),
       decoration: BoxDecoration(
           border:
-              Border.fromBorderSide(BorderSide(color: Colors.blue, width: 1))),
+              Border.fromBorderSide(BorderSide(color:myColor, width: 1))),
     );
   }
 }
