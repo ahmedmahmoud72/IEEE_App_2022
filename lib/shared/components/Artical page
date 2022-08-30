@@ -1,0 +1,33 @@
+import 'package:flutter/material.dart';
+
+
+class AritaclName extends StatelessWidget {
+
+ String title;
+ double width,height;
+
+AritaclName(this.title, this.width, this.height);
+
+  @override
+  Widget build(BuildContext context) {
+    // TODO: implement build
+   return Container(
+     width: width,
+     height: height,
+     child: Padding(
+       padding: const EdgeInsets.all(8.0),
+       child: Column(
+         children: [
+           Image.network('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcMpcXbgz66gEiqNAEHU6qC4Z4Ql5k30_kmA&usqp=CAU'),
+         SizedBox(
+           height: 20,
+         ),
+           Text('AFESFAEEEEEEEEEEEEEEEEEEEEEEGEAGVKEHNGLKJEHJGHDEHGJKEHDJGVBHKJEDBKJBAESDJKFBVKJAEDBHGVJKBHEDKJEGVJKEDBHEGVJKEDBKJGVBEDBGVJKDEBGVJBNDAJKEGVBJAESBNVGJEDBJGVK'
+               'GJJEJGVBEJKDHNGKLEHDKVGLJEDJGKEJ')
+         ],
+       ),
+     ),
+   ) ;
+  }
+
+}
